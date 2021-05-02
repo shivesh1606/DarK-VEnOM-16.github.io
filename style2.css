@@ -68,50 +68,19 @@ header ul li a.active
 .sec
 {
     position: relative;
+    width:100%;
     padding: 100px;
-    
+    top: 100px;
     /*z-index: 10;*/
 }
-.sec h2
-{
-    position: relative;
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    color: #0c5028;
-    text-transform: capitalize;
-    width: 100%;
-    text-align: center;
 
-    line-height: 1em;
-    outline: none;
-    animation: animate 5s linear infinite;
 
-}
-@keyframes animate
-{
-    18%,20%,50%,60%,80%,92%,1%
-    {
-        color: #0e3742;
-        text-shadow: none;
-    }
-    18.1%,20.1%,30%,50%,100%
-    {
-        color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 60px #03bcf4,
-        0 0 8px #03bcf4,
-        0 0 1000px #03bcf4;
-        
     
-    }
-}
-    
-}
+
 .sec p
 {
     font-size: 1.2em;
     color: #fff;
+
     
 }
