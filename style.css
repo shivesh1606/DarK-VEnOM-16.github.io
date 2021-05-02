@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
-
 *
 {
     margin: 0;
@@ -160,10 +158,4 @@ section img#mountain_front
     color: gray;
    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
  }
-}
-
-
-.sec h2
-{
-    color: #fff;
 }
