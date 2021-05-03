@@ -11,7 +11,7 @@
 body
 {
     min-height: 100vh;
-    background: linear-gradient(#2b1055,#7597de,#111);
+    background: linear-gradient(#2b1055 ,#7597de,rgb(85, 51, 235));
       
 }
 header{
@@ -68,16 +68,13 @@ header ul li a.active
 .sec
 {
     position: relative;
-    width:100%;
-    padding: 100px;
-    margin-top: 100px;
-    left: 0px;
     width: 100%;
-    padding: 30px 200px;
+    height: 80vh;
+    padding: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: right;
-    margin-bottom: 100px;    
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
     
 }
 
@@ -86,47 +83,58 @@ header ul li a.active
 
 .sec p
 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #fff;
-    margin-left: 150px;
+    margin-left: 200px;
 
     
 }
+
 .skills
 {
     position: relative;
+    
 
 }
-.skills h1 {
-    
-    font-family: 'Poppins' sans-serif;
-    font-size: 3em;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #5335cf 0% , #de005e 25% , #f66e48 50% , #de005e 75%, #5335cf 100%);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-    animation: textanimate 10s linear infinite;
-    margin-bottom: 10px;
-    letter-spacing: px;
-    color: #fff;
+.skills h1
+{    
+   background: 50% 100% / 50% 50% no-repeat
+radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-size: 10vw;
+font-family: "Source Sans Pro", sans-serif;
+animation: reveal 3000ms ease-in-out forwards 200ms,
+   glow 2500ms linear infinite 2000ms;
+   margin-bottom: 120px;
+   margin-left: 50px;
 }
-@keyframes textanimate {
-    100%{
-        background-position: 400%;
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
     }
-}
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
 .container{
     position: relative;
-    width: 900px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 5px;
+    margin: 1px;
 }
 .container .card {
     position: relative;
-    width: 250px;
+    width: 230px;
+    margin-bottom: 100px;
     background: linear-gradient(0deg ,#1b1b1b,#222,#1b1b1b);
     display: flex;
     justify-content: center;
@@ -135,11 +143,13 @@ header ul li a.active
     border-radius: 4px;
     text-align: center;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+    margin-top: 100px;
+    margin: 1px;
 }
 .container .card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.5);
+    transform: translateY(-50px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
 }
 .container .card::before{
     content: '';
@@ -233,4 +243,16 @@ svg circle:nth-child(2){
 .card:nth-child(3) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440* 30) /100 );
     stroke: #ff04f7;
+}
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440* 75) /100 );
+    stroke: #ff4c35;
+}
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440* 60) /100 );
+    stroke: #ff3e7e;
+}
+.card:nth-child(6) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440* 40) /100 );
+    stroke: #e732ff;
 }

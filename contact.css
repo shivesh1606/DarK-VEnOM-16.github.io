@@ -1,25 +1,38 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body 
+{
     min-height: 100vh;
     background: #333;
     display: flex;
     justify-content: center;
     align-items: center;   
     font-family: sans-serif;
-    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: scroll;
+    background: linear-gradient(#2b1055 10%,#7597de);
+    
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     position: relative;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .container .card {
     position: relative;
     border-radius: 10px;
+    margin: 1px;
+
 }
 
 .container .card .icon {
@@ -43,6 +56,9 @@ body {
 
 .container .card:nth-child(3) .icon {
     background: #4aada9;
+}
+.container .card:nth-child(4) .icon {
+    background: #6553cc;
 }
 
 
