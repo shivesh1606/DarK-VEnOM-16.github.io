@@ -10,7 +10,6 @@
 body
 {
     min-height: 100vh;
-    overflow-x: hidden;
     background: linear-gradient(#2b1055,#7597de);
     height: 100%;
     display: grid;
@@ -78,7 +77,7 @@ header ul li a.active
 .card {
   height: 290px;
   width: 350px;
-  margin: 0 20px;
+  margin: 0 10px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   background: white;
   transition: 0.4s;
