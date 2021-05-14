@@ -2,7 +2,8 @@ body{
     padding: 0;
     margin: 0;
     text-align: center; 
-    background-image: url("stars.png"),linear-gradient(#00adb5,#21094e,#00adb5,#aad8d3,aliceblue 150%)  ;
+    background-image: url("stars.png"),linear-gradient(#323232,#21094e)  ;
+    color: white;
     font-family: 'KoHo', sans-serif;
 
     
@@ -64,7 +65,7 @@ nav button
 {
     text-decoration: none;
     border-radius: 40px;
-    background: #f5f5f5;
+    background-color: darkgray;
     opacity: 1;
     padding: 5px 10px;
     font-weight: 300;
@@ -75,7 +76,7 @@ nav button
 }
 nav button a
 {
-    color: black;
+    color: white;
 }
 nav ul li a:hover,
 nav ul li a:active,
@@ -240,7 +241,7 @@ section::before
      height: 300px;
     width: 28%;
     display: flex;
-    background: pink;
+    
     align-content: flex-end;
     flex-direction: column;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
@@ -274,6 +275,7 @@ section::before
     display: flex;
     flex-direction: column;
     padding: 5px 5px;
+    background: black;
     
     
 }
@@ -284,12 +286,13 @@ section::before
     align-items: center;
 }
 
+
 .container .price
 {
     display: flex;
     justify-content: space-between;
     padding: 0 20px 10px 20px;
-  background: white;
+  background: black;
   opacity: 0;
  visibility: hidden;
   transition: 0.1s;
@@ -310,7 +313,7 @@ section::before
 {
     font-size:1.4rem;
     font-weight: 600;
-    color: #202020;
+    color: whitesmoke;
 }
 .container .row .Veg img
 {
@@ -739,5 +742,10 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     object-fit: cover;
     height: 100%;
     border-radius: 50%;
+}
+
+.special .fa-rupee-sign
+{
+    color: white;
 }
 
