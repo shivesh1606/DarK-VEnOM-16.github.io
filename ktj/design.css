@@ -4,6 +4,7 @@ body{
     text-align: center; 
     background-image: url("stars.png"),linear-gradient(#00adb5,#21094e,#00adb5,#aad8d3,aliceblue 150%)  ;
     font-family: 'KoHo', sans-serif;
+    overflow-x: hidden;
 
     
     
@@ -24,13 +25,14 @@ nav
     background-color: #393e46;
     z-index: 5000;
     padding: 5px 0;
+    border-radius: 5px;
 
 }
 nav .logo
 {
     font-family: 'Niramit', sans-serif;
     font-weight: 700;
-    font-size: 1.65rem;
+    font-size: 1.8rem;
     padding: 0 5px;
     text-transform:capitalize;
     color:aliceblue;
@@ -52,6 +54,7 @@ nav ul
 nav ul li
 {
     list-style: none;
+    font-size: 1.2rem;
     
 }
 nav a
@@ -158,6 +161,15 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
 
     
 }
+hr{
+  
+  border-style: none;
+  border-top: dotted;
+  border-color: #c8c2bc;
+  border-width: 8px;
+  width: 5%;
+
+}
 #heading 
 {
     font-size: 4rem;
@@ -165,10 +177,15 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     width: 100%;
     
     position: relative;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Satisfy', cursive;S
     margin-bottom: -6px;
+    text-shadow: 4px 4px 10px #fefefe;
     
 
+}
+.intro #heading
+{
+    text-shadow: none;
 }
 #subtitle
 {
@@ -420,12 +437,12 @@ section::before
     visibility: visible;
     border-radius: 50px;
     border-color: transparent;
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+    box-shadow:  10px 10px 1000px #bebebe,
+             -10px -10px 100px #ffffff;
 }
 #search i
 {
-    color: #511281;
+    color: #a5e1ad;
     transform: scale(1.5);
 }
 .R .container .price
@@ -444,10 +461,7 @@ section::before
     color:wheat;
     font-family: sans-serif;
 }
-#R h1
-{
-    color: whitesmoke;
-}
+
 #R .price
 {
     color: black;
@@ -739,5 +753,14 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     object-fit: cover;
     height: 100%;
     border-radius: 50%;
+}
+.show .card .img
+{
+    width:100%;
+}
+.show .card .img img
+{
+    object-fit: cover;
+    width: 40%;
 }
 
