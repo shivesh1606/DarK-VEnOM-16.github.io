@@ -637,6 +637,7 @@ section::before
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
     transition: 0.4s;
+    padding-bottom: 5px;
 }
 .show .card .para
 {
