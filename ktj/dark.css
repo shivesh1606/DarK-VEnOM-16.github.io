@@ -769,8 +769,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
 .fa-smile
 {
     color: #fdca40; 
-    //transform: 0.5s ease-out;
-    //animation: animate1 2s linear infinite;
+    
 }
 @keyframes animate1
 {
@@ -791,14 +790,13 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
 {
     animation: animate1 1.5s linear ;
 }
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 768px) {
  
     body
     {
         overflow-x: visible;
         text-align: center;
     }
-   
     .special .container
     {
         flex-direction: column;
@@ -822,12 +820,37 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     {
         position: absolute;
         width:100%;
-        opacity: 0.4;
+        opacity: 0.5;
     }
     .intro .cover .name
     {
         text-align: center;
     }
+    #review .container
+    {
+        flex-direction: column;
+    }
+    #footer .container .row
+    {
+        height:13vh;
+    }
+    .form
+    {
+        width: 100%;
+    }
+    .show
+    {
+        width: 150%;
+        margin: 0 auto;
+    }
+    
+}
+hr{
+  display: inline-block;
+  border-style: none;
+  border-top: dotted;
+  border-color: #c8c2bc;
+  border-width: 8px;
+  width: 5%;
 
 }
-
