@@ -704,6 +704,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     width: inherit;
     color:white;
     font-size: 1.2em;
+    transform: translateY(-20px);
 }
 #footer a
 {
@@ -824,7 +825,8 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     {
         position: absolute;
         width:100%;
-        opacity: 0.5;
+        opacity: 0.4;
+        background: black;
     }
     .intro .cover .name
     {
@@ -836,18 +838,39 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     }
     #footer .container .row
     {
-        height:13vh;
+        height:14vh;
+    }
+    .show
+    {
+        width: 100%;
+    }
+    nav ul
+    {
+        width: 100%;
     }
     .form
     {
         width: 100%;
     }
-    .show
+    #heading
     {
-        width: 150%;
-        margin: 0 auto;
+        font-size: 3.6rem;
     }
-    
+    #subtitle
+    {
+        font-size: 1.8rem;
+    }
+    .intro .name span #heading
+    {
+        margin-left: none;
+        font-size: 5rem;
+    }
+    .intro h2
+    {
+        font-size: 2.5rem;
+        color: white;
+    }
+
 }
 hr{
   display: inline-block;

@@ -794,7 +794,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
  
     body
     {
-        overflow-x: visible;
+
         text-align: center;
     }
     .special .container
@@ -842,8 +842,31 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     {
         width: 150%;
         margin: 0 auto;
+        overflow-x: scroll;
     }
-    
+    .show {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+    .show::-webkit-scrollbar {
+    display: none;
+}
+    .intro .name span #heading
+    {
+        font-size: 5rem;
+    }
+    .intro h2
+    {
+        font-size: 2.5rem;
+    }
+    nav
+    {
+        flex-wrap: wrap;
+    }
+    nav ul
+    {
+        width: 100%;
+    }
 }
 hr{
   display: inline-block;
