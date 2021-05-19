@@ -251,3 +251,15 @@ svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440* 40) /100 );
     stroke: #e732ff;
 }
+img
+{
+    width: 400px; 
+    border: 10px solid grey;
+      border-radius: 15px;
+    -webkit-transform: rotate(-2deg) skewY(-2deg);
+}
+#sec
+{
+    display: flex;
+    fl
+}
