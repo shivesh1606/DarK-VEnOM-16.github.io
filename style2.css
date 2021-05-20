@@ -257,9 +257,14 @@ img
     border: 10px solid grey;
       border-radius: 15px;
     -webkit-transform: rotate(-2deg) skewY(-2deg);
+	
 }
 #sec
 {
     display: flex;
     fl
+}
+@media only screen and (max-width: 768px) 
+{
+    width:0px;
 }
