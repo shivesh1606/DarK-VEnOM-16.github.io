@@ -266,5 +266,8 @@ img
 }
 @media only screen and (max-width: 768px) 
 {
-    width:0px;
+    img    
+    {
+         width:0px;
+    }
 }
